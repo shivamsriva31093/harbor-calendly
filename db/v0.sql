@@ -1,4 +1,9 @@
 -- Users and authentication
+CREATE USER calendly WITH PASSWORD 'calendly@911#';
+create database calendly;
+
+GRANT ALL PRIVILEGES ON DATABASE calendly TO calendly;
+
 create schema if not exists stg;
 drop table if exists stg.users cascade ;
 CREATE TABLE stg.users

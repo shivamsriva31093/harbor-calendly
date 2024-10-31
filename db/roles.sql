@@ -1,8 +1,4 @@
 -- Log into psql and then:
-CREATE USER calendly WITH PASSWORD 'calendly@911#';
-GRANT ALL PRIVILEGES ON DATABASE calendly TO calendly;
-
-
 grant USAGE on SCHEMA public to calendly;
 grant USAGE on SCHEMA stg to calendly;
 
