@@ -1,0 +1,13 @@
+<div>
+    <h2>Event Invitation</h2>
+    <p>Hello {{userName}},</p>
+    <p>You have been invited to "{{eventTitle}}" by {{organizerName}}.</p>
+    <div>
+        <strong>When:</strong> {{startTime}} to {{endTime}}
+    </div>
+    <div style="margin-top: 20px;">
+        <a href="{{baseUrl}}/events/{{eventId}}/respond?response=ACCEPTED" style="color: green;">Accept</a> |
+        <a href="{{baseUrl}}/events/{{eventId}}/respond?response=TENTATIVE" style="color: orange;">Maybe</a> |
+        <a href="{{baseUrl}}/events/{{eventId}}/respond?response=DECLINED" style="color: red;">Decline</a>
+    </div>
+</div>

@@ -1,0 +1,214 @@
+openapi: 3.0.0
+info:
+  title: Calendar API
+  version: 1.0.0
+  description: Advanced calendar management and scheduling API
+
+servers:
+  - url: http://localhost:8080/api/v1
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        timezone:
+          type: string
+
+    AvailabilityWindow:
+      type: object
+      properties:
+        start:
+          type: string
+          format: time
+        end:
+          type: string
+          format: time
+
+    DailyAvailability:
+      type: object
+      properties:
+        dayOfWeek:
+          type: string
+          enum: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY]
+        windows:
+          type: array
+          items:
+            $ref: '#/components/schemas/AvailabilityWindow'
+
+    BufferSettings:
+      type: object
+      properties:
+        beforeMeeting:
+          type: integer
+          minimum: 0
+        afterMeeting:
+          type: integer
+          minimum: 0
+        applyTo:
+          type: array
+          items:
+            type: string
+            enum: [external, internal, all]
+
+    MeetingPreset:
+      type: object
+      properties:
+        name:
+          type: string
+        duration:
+          type: integer
+        color:
+          type: string
+        defaultBuffer:
+          type: integer
+
+    Location:
+      type: object
+      properties:
+        name:
+          type: string
+        address:
+          type: string
+        availabilityRules:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              $ref: '#/components/schemas/AvailabilityWindow'
+
+paths:
+  /users:
+    post:
+      summary: Create a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        201:
+          description: User created successfully
+
+  /users/{userId}/availability:
+    get:
+      summary: Get user's availability
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        200:
+          description: User's availability retrieved successfully
+
+    put:
+      summary: Update user's availability
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/DailyAvailability'
+      responses:
+        200:
+          description: Availability updated successfully
+
+  /schedule/overlap:
+    get:
+      summary: Find overlapping availability between users
+      parameters:
+        - name: userIds
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+              format: uuid
+        - name: startDate
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date
+        - name: endDate
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date
+      responses:
+        200:
+          description: Overlapping availability found
+
+  /users/{userId}/buffer-settings:
+    put:
+      summary: Update buffer settings
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BufferSettings'
+      responses:
+        200:
+          description: Buffer settings updated successfully
+
+  /users/{userId}/meeting-presets:
+    get:
+      summary: Get user's meeting presets
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        200:
+          description: Meeting presets retrieved successfully
+
+    post:
+      summary: Create a new meeting preset
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MeetingPreset'
+      responses:
+        201:
+          description: Meeting preset created successfully

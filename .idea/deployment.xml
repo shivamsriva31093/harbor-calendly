@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="amazon-new">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="amazon-old">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="api-gateway">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="api-gw-poc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="apigw-uat">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="bial">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="box8">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="boxlens-poc-n1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="consul">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ct-poc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ct-staging">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="denso">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="denso-main">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="denso-new">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="deploymentVm">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="deva">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="deva (project level)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dlp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dso">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dso_new">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="faasos-new">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="grofers">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hw">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="jubilant">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="kellogs-prod">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="kellogs-stg">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="loadtest-svc-n1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="onemg-new">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pgdata">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pharmaserve">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="piramal">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pre-prod">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="prod">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="qa">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="qadb">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rgees">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rtmb0">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rtmb1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rtmb2">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rtmb3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sats">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sats-old">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sql">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="stg_fas">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="swiggy">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tbox_cent">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tvs">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tvs-staging">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="usvc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vmss">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vmss-stg">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/test" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

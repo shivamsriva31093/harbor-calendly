@@ -1,0 +1,27 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "calendly",
+    "user": "calendly",
+    "password": "calendly@911#",
+    "poolSize": 5
+  },
+  "scheduler": {
+    "minimumMeetingDuration": 15,
+    "maximumLookAheadDays": 60
+  },
+  "server": {
+    "port": 8080,
+    "host": "localhost"
+  },
+  "mail": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "username": "admin@a.org",
+    "password": "a@502#",
+    "ssl": true,
+    "from": "Calendar App <your-email@gmail.com>",
+    "baseUrl": "https://your-app-url.com"
+  }
+}

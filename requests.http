@@ -1,0 +1,93 @@
+POST {{v1}}/users
+Content-Type: application/json
+
+{
+  "email": "shashank.mohan@example.com",
+  "firstName": "Shashank",
+  "lastName": "Mohan",
+  "timezone": "Asia/Calcutta"
+}
+
+> {%
+  const id = response.body.data.id
+  if (id !== undefined) {
+    client.global.set("userId", id)
+  }
+ %}
+###
+GET {{v1}}/users/{{userId}}
+Content-Type: application/json
+
+###
+DELETE {{v1}}/users/{{userId}}
+
+###
+PUT {{v1}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "firstName": "John",
+  "lastName": "Doe Updated",
+  "timezone": "Europe/London"
+}
+
+###
+GET {{v1}}/users/{{userId}}/timezone
+
+###########################################
+POST {{v1}}/users/{{userId}}/availability
+Content-Type: application/json
+
+{
+  "dayOfWeek": 1,
+  "startTime": "18:00:00",
+  "endTime": "19:30:00"
+}
+
+###
+GET {{v1}}/schedule/overlap?userIds=["80c50686-17ab-4921-9a70-984d0b0ea684","4395054c-6400-4d9c-a681-53868d5f94c9"]&startDate=2024-01-01&endDate=2024-01-07
+
+###
+POST {{v1}}/events
+Content-Type: application/json
+
+{
+  "title": "Team Weekly Sync",
+  "description": "Weekly team sync meeting",
+  "startTime": "2024-01-01T10:31:00Z",
+  "endTime": "2024-01-01T10:45:00Z",
+  "organizerId": "80c50686-17ab-4921-9a70-984d0b0ea684",
+  "participants": [
+    {
+      "userId": "4395054c-6400-4d9c-a681-53868d5f94c9",
+      "response": "PENDING",
+      "notificationPreference": "EMAIL"
+    }
+  ],
+  "metadata": {
+    "location": "Conference Room A",
+    "conferenceLink": "https://meet.example.com/123",
+    "recurringPattern": {
+      "frequency": "WEEKLY",
+      "interval": 1,
+      "endDate": "2024-03-31"
+    }
+  }
+}
+
+###
+GET {{v1}}/events/f43d7a17-1026-455b-abb8-d78946ccf5cc
+Content-Type: application/json
+
+###
+DELETE {{v1}}/events/f43d7a17-1026-455b-abb8-d78946ccf5cc
+Content-Type: application/json
+
+###
+PUT {{v1}}/events/f43d7a17-1026-455b-abb8-d78946ccf5cc/participants/4395054c-6400-4d9c-a681-53868d5f94c9/response
+Content-Type: application/json
+
+{
+  "response": "ACCEPTED"
+}
