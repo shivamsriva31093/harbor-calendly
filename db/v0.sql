@@ -1,4 +1,5 @@
 -- Users and authentication
+create schema if not exists stg;
 drop table if exists stg.users cascade ;
 CREATE TABLE stg.users
 (

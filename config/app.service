@@ -1,0 +1,39 @@
+# /etc/systemd/system/calendar-app.service
+[Unit]
+Description=Calendar Application Service
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=calendar-app
+Group=calendar-app
+
+# Environment variables
+
+# Java options
+Environment="JAVA_OPTS=-XX:+UseG1GC -Xmx1g -Xms512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/calendar-app -Dlogback.configurationFile=config/logback.xml"
+
+# Application directory
+WorkingDirectory=/home/admin/apps/dev
+
+# Path to jar file
+ExecStart=/usr/bin/java $JAVA_OPTS -jar app.jar --conf config/app.config.json
+
+# Restart configuration
+Restart=always
+RestartSec=10
+
+# Limit resources
+LimitNOFILE=65536
+MemoryLimit=2G
+CPUQuota=200%
+
+# Security
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
